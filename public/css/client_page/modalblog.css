@@ -1,0 +1,5 @@
+@media (min-width: 992px) {
+    #blogModal {
+        max-width: 900px;
+    }
+}

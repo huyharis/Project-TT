@@ -1,0 +1,115 @@
+.numberCart{
+    color:white;
+    background-color:hsl(28,82%,53%);
+    width:20px;
+    height:20px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%;
+  
+}
+li{
+    list-style: none !important;
+}
+.order-1{
+    margin-top: 200px !important;
+}
+ul >li.list-group-item.menuleft-1:hover{
+    color:hsl(28,82%,53%) !important;
+    border-bottom-color: hsl(28,82%,53%) !important;
+}
+.active-menu{
+    border-bottom-color: hsl(28,82%,53%) !important;
+    color:hsl(28,82%,53%) !important;
+}
+/* li.list-group-item.menuleft-1:nth-child(1){
+    border-bottom-color: hsl(28,82%,53%) !important;
+    color:hsl(28,82%,53%) !important;
+} */
+.center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    width: 23%;
+}
+.left img{
+    width: 100%;
+}
+.right{
+    width:76%;
+}
+.righ .price{
+    font-size: 13px;
+}
+.desc{
+    font-size: 12px;
+    margin: 0;
+}
+.num-cart{
+    background-color: #ea8025;
+    padding: 0 20px;
+    color: white !important;
+}
+.css-circle{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ff9c00;
+    text-align: center;
+    align-items: center;
+    line-height: 19px !important;
+    margin-right:5px;
+    cursor: pointer;
+}
+.left-fixed{
+    width:260px;
+
+}
+.cart-fixed{
+    width:400px;
+}
+@media (max-width:1200px) and (min-width:992px){
+    .cart-fixed {
+        width: 315px;
+    }
+    .left-fixed {
+        width: 225px;
+    }
+}
+@media (max-width:991px) {
+   
+    .left-fixed {
+        display:none;
+    }
+    .res{
+        display:block !important;
+    }
+    .info-cart .cart-fixed{
+        display:none;
+    }
+    .res-cart .cart-fixed{
+        position: relative !important;
+        width:100%;
+    }
+}
+.res{
+    position: fixed;
+    bottom: 0;
+    width: 110%;
+    background-color: hsl(28,82%,53%);
+    display:none;
+    text-align: center;
+    color:white;
+    padding:10px 0;
+}
+.noti{
+    position: relative;
+    top: 20%;
+}
+.alert.alert-primary.noti i {
+    position: absolute;
+    top: 0;
+    right: -20px;
+}

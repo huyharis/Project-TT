@@ -1,0 +1,147 @@
+.admin-page .navbar {
+    position: relative;
+    float: right;
+}
+
+.admin-page .table td {
+    vertical-align: middle;
+}
+
+.products i.fas {
+    padding-right: 10px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.product_control {
+    border: none;
+    width: 9%;
+}
+
+.product_control i {
+    display: none;
+}
+
+.products table tbody tr {
+    cursor: pointer;
+}
+
+.products table tr:hover .product_control i {
+    display: inline-block;
+}
+
+.product_control i:hover {
+    color: red;
+}
+
+.products .card-title {
+    display: inline-block;
+}
+
+.products form {
+    margin: 0px;
+    width: 70%;
+}
+
+.card-title-right {
+    display: inline-flex;
+    float: right;
+    margin: 9px 0;
+}
+
+.products table {
+    word-break: break-word;
+}
+
+.products table td:nth-child(1) {
+    width: 20%;
+}
+
+.products table td:nth-child(2) {
+    width: 10%;
+}
+
+.products table td:nth-child(3) {
+    width: 30%;
+}
+
+.products table td:nth-child(4) {
+    width: 15%;
+}
+
+.products table td:nth-child(5) {
+    width: 15%;
+}
+
+.products table td:nth-child(6) {
+    width: 10%;
+}
+
+
+/* Blogs */
+
+#blogs a.deleteBlog {
+    position: absolute;
+    right: 17px;
+    top: 7px;
+    font-size: 18px;
+}
+
+#blogs input[type="file"] {
+    margin-top: 15px;
+}
+
+#blogs form .btn,
+.navbar .navbar-nav>a.btn {
+    padding: 7px 22px;
+    margin: 0;
+    float: right;
+}
+
+#blogs textarea {
+    max-height: 150px;
+    height: 150px;
+}
+
+#blogs .alert,
+#products .alert {
+    width: 25%;
+    position: fixed;
+    top: 12px;
+    right: 10px;
+    z-index: 2000;
+}
+
+.filepond--drop-label {
+    color: #4c4e53;
+}
+
+.filepond--label-action {
+    text-decoration-color: #babdc0;
+}
+
+.filepond--panel-root {
+    border-radius: 2em;
+    background-color: #edf0f4;
+    height: 1em;
+}
+
+.filepond--item-panel {
+    background-color: #595e68;
+}
+
+.filepond--drip-blob {
+    background-color: #7f8a9a;
+}
+
+.input-group-append {
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.input-group {
+    padding-right: 28px;
+}
