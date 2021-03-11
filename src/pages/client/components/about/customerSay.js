@@ -89,7 +89,7 @@ export default class CustomerSay extends Component {
                     <img src="../images/person_2.jpg" alt />
                   </div>
                   <div className="name align-self-center">
-                    Anh Tuấn
+                    Person 2
                     <span className="position">Illustrator Designer</span>
                   </div>
                 </div>

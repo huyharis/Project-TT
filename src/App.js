@@ -3,7 +3,7 @@ import {  Route, Redirect } from 'react-router-dom';
 import { withRouter } from 'react-router'
 
 import Home from './pages/client/home';
-// import Admin from './pages/admin/administrator';
+import Admin from './pages/admin/adminStrator';
 import Collection from './pages/client/collection';
 
 import BlogPage from './pages/client/blogPage';
@@ -31,7 +31,7 @@ class App extends Component {
             {this.props.location.pathname!=='/admin' ?  <Header /> :""}
                 <Route exact path="/" component = {Home}/>
                 <Route exact path="/home" component = {Home}/>
-                {/* <PrivateRoute exact path="/admin" component = {Admin}/> */}
+                <PrivateRoute exact path="/admin" component = {Admin}/>
                 <Route exact path="/menu" component = {Collection}/>
                 <Route exact path="/blog" component = {BlogPage}/>
                 <Route exact path ="/about" component ={About}/>

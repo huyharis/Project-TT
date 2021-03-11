@@ -38,7 +38,7 @@ export default class MenuAbout extends Component {
                       <div className="image mr-3 align-self-center">
                         <img src="../images/person_2.jpg" alt />
                       </div>
-                      <div className="name align-self-center">Anh Tuấn<span className="position">Illustrator Designer</span></div>
+                      <div className="name align-self-center">Person 2<span className="position">Illustrator Designer</span></div>
                     </div>
                   </div>
                 </div>
