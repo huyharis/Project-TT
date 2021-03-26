@@ -8,11 +8,11 @@ import Collection from './pages/client/collection';
 
 import BlogPage from './pages/client/blogPage';
 import About from './pages/client/about';
-// import Order from './CartComponent/Order';
+import Order from './CartComponent/Order';
 import Header from './pages/client/components/header';
 import store from './store';
 import { getTypeProduct } from './actions/typeProductAction';
-// import Payment from './CartComponent/payment';
+import Payment from './CartComponent/payment';
 import SignIn from './pages/login/SignIn';
 import SignupPage from './pages/login/SignupPage';
 import LoginPage from './pages/login/LoginPage';
@@ -35,8 +35,8 @@ class App extends Component {
                 <Route exact path="/menu" component = {Collection}/>
                 <Route exact path="/blog" component = {BlogPage}/>
                 <Route exact path ="/about" component ={About}/>
-                {/* <Route exact path ="/order" component ={Order}/> */}
-                {/* <Route exact path ="/payment" component ={Payment}/> */}
+                <Route exact path ="/order" component ={Order}/>
+                <Route exact path ="/payment" component ={Payment}/>
                 <Route exact path ="/user/login" component ={SignIn}/>
                 <Route exact path ="/user/signup" component ={SignupPage}/>
                 <Route exact path ="/login" component ={LoginPage}/>

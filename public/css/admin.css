@@ -145,3 +145,12 @@ a {
 .input-group {
     padding-right: 28px;
 }
+svg.bi.bi-box {
+    margin: 3% 0;
+}
+svg.bi.bi-journal-album{
+    margin: 3% 0;
+}
+svg.bi.bi-cash-stack{
+    margin: 3% 0;
+}

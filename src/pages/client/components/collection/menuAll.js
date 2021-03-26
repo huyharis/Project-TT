@@ -82,7 +82,6 @@ class AllMenu extends Component {
   };
   render() {
     return (
-      // <section className="ftco-menu mb-5 pb-5" style={{ backgroundColor: '#f7f5f2' }}>
       <section className="ftco-menu mb-5 pb-5">
         <div className="row">
           <div className="col-md-12">
@@ -108,9 +107,6 @@ class AllMenu extends Component {
                     All
                   </a>
                 </li>
-                {/* <li><a href="#tab-1" data-toggle="tab">Coffee</a></li>
-                                <li><a href="#tab-2" data-toggle="tab">Tea</a></li>
-                                <li><a href="#tab-3" data-toggle="tab">Cake</a></li> */}
                 {this.state.typeProd.map((type) => (
                   <li key={type._id}>
                     <a
@@ -130,68 +126,68 @@ class AllMenu extends Component {
                 <div className="col-md-12 d-flex align-items-center">
                   <div className="tab-content ftco-animate">
                     <div className="tab-pane fade show active">
-                      {this.state.products.map((prd) => (
-                        <div className="col-md-3" key={prd._id}>
-                          <div className="menu-entry">
-                            <img
-                              href="#"
-                              className="img"
-                              src={prd.image}
-                              style={{
-                                width: "100%",
-                                height: "220px",
-                                backgroundSize: "cover",
-                                backgroundRepeat: "no-repeat",
-                                backgroundPosition: "center center",
-                              }}
-                            />
-                            <div className="text text-center pt-4">
-                              <h4>
-                                <a
-                                  href="product-single.html"
-                                  style={{
-                                    color: "#c49b63",
-                                    fontWeight: "100",
-                                    textTransform: "uppercase",
-                                    fontFamily:
-                                      '"Montserrat", "Helvetica Neue", Arial, sans-serif',
-                                    fontSize: "0.7em",
-                                  }}>
-                                  {prd.name}
-                                </a>
-                              </h4>
-                              {/* <p>{ prd.describe }</p> */}
-                              <p className="price">
-                                <h5>
-                                  <span
+                      {this.state.products.map((prd) => {
+                        return (
+                          <div className="col-md-3" key={prd._id}>
+                            <div className="menu-entry">
+                              <img
+                                href="#"
+                                className="img"
+                                src={prd.image}
+                                style={{
+                                  width: "100%",
+                                  height: "220px",
+                                  backgroundSize: "cover",
+                                  backgroundRepeat: "no-repeat",
+                                  backgroundPosition: "center center",
+                                }}
+                              />
+                              <div className="text text-center pt-4">
+                                <h4>
+                                  <a
+                                    href="product-single.html"
                                     style={{
-                                      color: "#fff",
-                                      fontSize: "16px",
+                                      color: "#c49b63",
+                                      fontWeight: "100",
+                                      textTransform: "uppercase",
                                       fontFamily:
-                                        '"Bebas Neue","Lato", sans-serif',
-                                      fontWeight: "700",
+                                        '"Montserrat", "Helvetica Neue", Arial, sans-serif',
+                                      fontSize: "0.7em",
                                     }}>
-                                    {prd.price} VND
-                                  </span>
-                                </h5>
-                              </p>
-                              {/* <li><a href="#" className="btn btn-primary btn-outline-primary" style={{ color: '#c49b63', fontFamily: '"Montserrat", "Helvetica Neue", Arial, sans-serif' }}>Buy Now</a></li> */}
-                              <li>
-                                <NavLink
-                                  to="/order"
-                                  className="btn btn-primary btn-outline-primary"
-                                  style={{
-                                    color: "#c49b63",
-                                    fontFamily:
-                                      '"Montserrat", "Helvetica Neue", Arial, sans-serif',
-                                  }}>
-                                  Mua Ngay
-                                </NavLink>
-                              </li>
+                                    {prd.name}
+                                  </a>
+                                </h4>
+                                <p className="price">
+                                  <h5>
+                                    <span
+                                      style={{
+                                        color: "#fff",
+                                        fontSize: "16px",
+                                        fontFamily:
+                                          '"Bebas Neue","Lato", sans-serif',
+                                        fontWeight: "700",
+                                      }}>
+                                      ${prd.price}
+                                    </span>
+                                  </h5>
+                                </p>
+                                <li>
+                                  <NavLink
+                                    to="/order"
+                                    className="btn btn-primary btn-outline-primary"
+                                    style={{
+                                      color: "#c49b63",
+                                      fontFamily:
+                                        '"Montserrat", "Helvetica Neue", Arial, sans-serif',
+                                    }}>
+                                    Buy Now
+                                  </NavLink>
+                                </li>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      ))}
+                        );
+                      })}
                     </div>
                   </div>
                 </div>

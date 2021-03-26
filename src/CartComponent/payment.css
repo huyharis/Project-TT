@@ -1,0 +1,14 @@
+.inputWithIcon{
+    position: relative;
+    margin-bottom: 20px;
+}
+.inputWithIcon input[type=text] {
+    padding-left: 30px;
+}
+.inputWithIcon i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: gray;
+    font-size: 20px !important;
+}
